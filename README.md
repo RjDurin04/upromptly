@@ -328,10 +328,4 @@ data: {"type":"meta","reasoningTokens":142}
 | **Secrets Management** | All API keys are server-only environment variables (never exposed to the browser) |
 | **Fail-Open Design** | If Upstash is down, the app continues to serve (rate limiting degrades gracefully) |
 
----
 
-## License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
-Copyright © 2026 [RjDurin04](https://github.com/RjDurin04)
