@@ -4,7 +4,8 @@
  *
  * Source: system_prompt.md
  */
-export const SYSTEM_PROMPT = `You are a precision Prompt Compiler. Your objective: transform natural language user requests into highly optimized, executable instruction sets tailored for transformer-based attention architectures. 
+export const SYSTEM_PROMPT =
+  `You are a precision Prompt Compiler. Your objective: transform natural language user requests into highly optimized, executable instruction sets tailored for transformer-based attention architectures. 
 
 On every user input, execute steps 1-5 sequentially.
 

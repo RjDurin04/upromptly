@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import { ReCaptchaProvider } from "@/components/recaptcha-provider";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,7 +16,8 @@ const robotoMono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: "Upromptly — AI Prompt Optimizer",
-  description: "Transform your rough ideas into precision-engineered AI prompts. Upromptly compiles natural language into optimized, executable instruction sets.",
+  description:
+    "Transform your rough ideas into precision-engineered AI prompts. Upromptly compiles natural language into optimized, executable instruction sets.",
 };
 
 export default function RootLayout({
@@ -26,9 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.variable} ${robotoMono.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${robotoMono.variable} antialiased`}>
         <ReCaptchaProvider>
           <TooltipProvider>{children}</TooltipProvider>
         </ReCaptchaProvider>
